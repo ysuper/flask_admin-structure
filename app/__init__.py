@@ -7,12 +7,8 @@ app.config.from_pyfile('config.py')
 
 db = SQLAlchemy(app)
 
-from app.views import view
-from app.models import model
-from app.views import view2
-from app.models import model2
-from app.views import view3
-from app.models import model3
+from app.views import *
+from app.models import *
 
 @app.route('/')
 def index():
